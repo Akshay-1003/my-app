@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<!-- <div > -->
+  <mat-card class="mat-card-card">
+    <mat-card-title>Weekly performance and Adherence report</mat-card-title>
+    <div class="Week-days">
+      <select name="" id="">
+        <option value="">Weekly</option>
+        <option value="">15 Days</option>
+        <option value="">Monthly</option>
+      </select>
+    </div>
+  </mat-card>
+<!-- </div> -->
+<div>
+  <mat-card class="mat-card-card2">
+    <mat-card-title>Runnig Activity</mat-card-title>
+    <mat-card-content class="info">
+      <div>
+        <circle-progress [animation]="true" [percent]=80 [subtitle]="'80%'" 
+        [title]="'Distanace'"></circle-progress>
+         
+        <h5>Distance in Km</h5>
+
+            <div class="Detailing">
+              <p>PLAN</p><br>
+              <p>ACTUAL</p>
+
+            </div>
+
+      </div>
+      
+      <div>
+            <circle-progress [animation]="true" [percent]=70 [subtitle]="'70%'"   
+            [title]="'Duration'"></circle-progress>
+              <h5>Duration in hh:mm:ss</h5>
+
+              <div class="Detailing">
+
+                <p>PLAN</p><br>
+                <p>ACTUAL</p>
+              </div>
+      </div>
+      
+   
+      <div >
+        <circle-progress [animation]="true" [percent]=60 [subtitle]="'60%'" 
+        [title]="'Consistancy'"></circle-progress>
+          <h5>Consistency in Percentage</h5>
+
+          <div class="Detailing">
+            <p>PLAN</p><br>
+            <p>ACTUAL</p>
+          </div>
+      </div>
+    </mat-card-content>
+
+    <h6>Average Workout Rating</h6> 
+    <select name="" id="btn-btn-btn">
+      <option value="">Details</option>
+      <option value="">Details</option>
+      <option value="">Details</option>
+    </select>
+
+ 
+  </mat-card>
+
+    <mat-card class="mat-card-card3">
+      <textarea placeholder="Type your weekly report" ></textarea>
+      <!-- <input type="text" placeholder="Your" required> -->
+        <button class="btn-btn">SEND</button>
+        <p>*please wait for the "Weekly feedback mail sent" alert after clicking on send</p>
+    </mat-card>
+
+
+</div>
+</body>
+</html>
